@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import imgEntreno from '../img/entreno.jpg';
 import imgProgreso from '../img/progreso.jpg';
 import imgFood from '../img/food.jpg';
+import Nav from '../Nav';
 
 const Home = () => {
     const [nombre, setNombre] = useState('');
@@ -22,9 +23,9 @@ const Home = () => {
   
     return (
       <div className="landing-page">
-        {/* <header >
+        <header >
           <Nav></Nav>
-        </header> */}
+        </header>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">Bienvenido a FitnessApp</h1>
