@@ -32,7 +32,7 @@ const Home = () => {
             <p className="hero-description">
               El sistema de fitness que te ayudará a alcanzar tus metas de manera eficiente.
             </p>
-            <a href="#features" className="cta-button">
+            <a href="/planes" className="cta-button">
               Descubre más
             </a>
           </div>
