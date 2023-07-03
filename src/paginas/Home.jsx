@@ -26,7 +26,7 @@ const Home = () => {
         <header >
           <Nav></Nav>
         </header>
-        <section className="hero">
+        <section className="hero" id='inicio'>
           <div className="hero-content">
             <h1 className="hero-title">Bienvenido a FitnessApp</h1>
             <p className="hero-description">
