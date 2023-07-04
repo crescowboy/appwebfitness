@@ -258,3 +258,38 @@ header{
 .footer p {
   margin: 0;
 }
+
+
+/* PLANES */
+
+.planes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.plan {
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.plan-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plan-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
