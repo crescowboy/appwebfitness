@@ -131,6 +131,7 @@ header{
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos de la sección de características */
@@ -276,6 +277,7 @@ header{
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .plan-title {
