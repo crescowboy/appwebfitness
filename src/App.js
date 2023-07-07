@@ -4,6 +4,8 @@ import React from 'react';
 import Home from './paginas/Home';
 import Planes from './paginas/Planes';
 import Entreno_page from './paginas/Entreno_page';
+import Progreso_page from './paginas/Progreso_page';
+import Food_page from './paginas/Food_page';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/planes' element={<Planes></Planes>}></Route>
         <Route path='/entreno' element={<Entreno_page></Entreno_page>}></Route>
+        <Route path='/progreso' element={<Progreso_page></Progreso_page>}></Route>
+        <Route path='/food' element={<Food_page></Food_page>}></Route>
       </Routes>
    </>
   );

@@ -26,7 +26,15 @@ const Home = () => {
 
     const entreno = ()=>{
       
-      navigate("/entreno")
+      navigate("/entreno");
+    }
+
+    const progreso = ()=>{
+      navigate("/progreso");
+    }
+
+    const food = ()=>{
+      navigate("/food");
     }
   
     return (
@@ -59,14 +67,14 @@ const Home = () => {
             <p className="feature-description">
               Registra tu progreso en cada sesión de entrenamiento y visualiza tus mejoras a lo largo del tiempo.
             </p>
-            <img src={imgProgreso} alt="Progreso" />
+            <img src={imgProgreso} alt="Progreso" onClick={progreso}/>
           </div>
           <div className="feature">
             <h2 className="feature-title">Nutrición saludable</h2>
             <p className="feature-description">
               Te ofrecemos planes de alimentación equilibrados y saludables, diseñados por expertos en nutrición.
             </p>
-            <img src={imgFood} alt="food" />
+            <img src={imgFood} alt="food" onClick={food}/>
           </div>
         </section>
         

@@ -4,7 +4,11 @@ import Nav from '../Nav'
 const Entreno_page = () => {
   return (
     <div>
-      <Nav></Nav>
+      <div>
+        <Nav></Nav>
+      </div>
+      
+      
     </div>
   )
 }
