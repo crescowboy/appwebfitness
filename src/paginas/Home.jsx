@@ -6,11 +6,13 @@ import imgEntreno from '../img/entreno.jpg';
 import imgProgreso from '../img/progreso.jpg';
 import imgFood from '../img/food.jpg';
 import Nav from '../Nav';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
+    const navigate = useNavigate();
     const formContacto = (e) => {
       e.preventDefault(); // Evita la recarga de la página al enviar el formulario
       toast.success('Mensaje enviado', { autoClose: 2500 });
@@ -19,6 +21,12 @@ const Home = () => {
       setNombre('');
       setEmail('');
       setMensaje('');
+    }
+
+
+    const entreno = ()=>{
+      
+      navigate("/entreno")
     }
   
     return (
@@ -44,7 +52,7 @@ const Home = () => {
               Diseñamos rutinas de entrenamiento específicas para cada usuario, adaptadas a sus objetivos y nivel de
               condición física.
             </p>
-            <img src={imgEntreno} alt="Entreno" />
+            <img src={imgEntreno} alt="Entreno" onClick={entreno}/>
           </div>
           <div className="feature">
             <h2 className="feature-title">Seguimiento de progreso</h2>
