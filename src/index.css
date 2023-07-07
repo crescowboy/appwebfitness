@@ -29,6 +29,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
 }
 
 header{
@@ -300,8 +301,62 @@ header{
 .feature img {
   transition: transform 0.3s ease;
   cursor: pointer;
+  z-index: 1;
 }
 
 .feature img:hover {
   transform: scale(1.05);
 }
+
+/* lkdsjlkdj */
+.entrenamientos-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.entrenamientos-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entrenamientos-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.entrenamientos-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.entrenamientos-info ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.entrenamientos-contact h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.entrenamientos-contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.entrenamientos-contact button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.entrenamientos-contact button:hover {
+  background-color: #0056b3;
+}
+
+

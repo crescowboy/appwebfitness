@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from '../Nav'
+import imgEntreno from '../img/entreno.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Entreno_page = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Navega a la página anterior
+  };
+
   return (
-    <div>
-      <div>
-        <Nav></Nav>
+   <div>
+    <header>
+    <Nav />
+    </header>
+      
+      <div className="entrenamientos-container">
+        <h1>Entrenamientos Personalizados</h1>
+        <p>¡Bienvenido a los entrenamientos personalizados!</p>
+        <p>En esta página encontrarás información detallada sobre nuestros servicios de entrenamiento personalizado.</p>
+
+        <div className="entrenamientos-info">
+          <h2>Beneficios de los entrenamientos personalizados</h2>
+          <ul>
+            <li>Adaptados a tus necesidades y objetivos específicos.</li>
+            <li>Mayor atención y seguimiento por parte del entrenador.</li>
+            <li>Programas de entrenamiento personalizados y progresivos.</li>
+            <li>Mejoría en la técnica y prevención de lesiones.</li>
+            <li>Motivación y apoyo constante.</li>
+          </ul>
+        </div>
+
+        <div className="entrenamientos-contact">
+          <h2>¡Contáctanos para obtener más información!</h2>
+          <p>Si estás interesado en nuestros servicios de entrenamiento personalizado, no dudes en contactarnos.</p>
+          <button onClick={handleGoBack}>Volver</button>
+        </div>
       </div>
-      
-      
     </div>
   )
 }
