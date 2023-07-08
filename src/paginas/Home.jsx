@@ -83,18 +83,12 @@ const Home = () => {
           <p className="contact-description">Si tienes alguna pregunta o consulta, no dudes en contactarnos.</p>
           <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <input type="text" name="name" required value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
+            <input type="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Correo electrónico" />
+            <textarea name="mensaje" required value={mensaje} onChange={(e) => setMensaje(e.target.value)} placeholder="Mensaje"></textarea>
+            <button type="submit" className="cta-button">
+              Enviar mensaje
+            </button>
         </form>
         </section>
         <footer className="footer">
