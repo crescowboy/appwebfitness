@@ -13,15 +13,15 @@ const Home = () => {
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
     const navigate = useNavigate();
-    const formContacto = (e) => {
-      e.preventDefault(); // Evita la recarga de la página al enviar el formulario
-      toast.success('Mensaje enviado', { autoClose: 2500 });
+    // const formContacto = (e) => {
+    //   e.preventDefault(); // Evita la recarga de la página al enviar el formulario
+    //   toast.success('Mensaje enviado', { autoClose: 2500 });
   
-      // Restablecer los campos del formulario
-      setNombre('');
-      setEmail('');
-      setMensaje('');
-    }
+    //   // Restablecer los campos del formulario
+    //   setNombre('');
+    //   setEmail('');
+    //   setMensaje('');
+    // }
 
 
     const entreno = ()=>{
@@ -81,7 +81,7 @@ const Home = () => {
         <section className="contact" id="contact">
           <h2 className="contact-title">¡Contáctanos!</h2>
           <p className="contact-description">Si tienes alguna pregunta o consulta, no dudes en contactarnos.</p>
-          <form onSubmit={formContacto} name='contact' className="contact-form" method="post">
+          <form  name='contact' className="contact-form" method="post">
           <input type="hidden" name="contact" value="contact" />
             <input type="text" name="name" required value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
             <input type="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Correo electrónico" />
