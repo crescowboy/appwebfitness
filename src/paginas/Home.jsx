@@ -81,9 +81,9 @@ const Home = () => {
         <section className="contact" id="contact">
           <h2 className="contact-title">¡Contáctanos!</h2>
           <p className="contact-description">Si tienes alguna pregunta o consulta, no dudes en contactarnos.</p>
-          <form onSubmit={formContacto} className="contact-form" method="post">
+          <form onSubmit={formContacto} name='contact' className="contact-form" method="post">
           <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="nombre" required value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
+            <input type="text" name="name" required value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
             <input type="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Correo electrónico" />
             <textarea name="mensaje" required value={mensaje} onChange={(e) => setMensaje(e.target.value)} placeholder="Mensaje"></textarea>
             <button type="submit" className="cta-button">
