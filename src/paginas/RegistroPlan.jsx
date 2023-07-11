@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import Nav from '../Nav';
+import Swal from 'sweetalert2';
 
-const RegistroPlanes = () => {
+
+const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [planSeleccionado, setPlanSeleccionado] = useState('');
@@ -16,11 +19,27 @@ const RegistroPlanes = () => {
     setPlanSeleccionado('');
 
     // Mostrar un mensaje de registro exitoso o realizar otra acción
-    alert('Registro exitoso');
+    Swal.fire({
+      title: '', 
+      text: 'Enviado con exito',
+      icon: 'success',
+      timer: 2000,
+      timerProgressBar: true,
+    })
   };
 
   return (
     <div>
+        <header>
+            <div>
+            <Nav></Nav>
+            </div>
+            
+        </header>
+    <div className='registro-padre'>
+        
+    <div className='registro-planes'>
+    
       <h1>Registro de Planes</h1>
       <form onSubmit={handleRegistro}>
         <div>
@@ -35,15 +54,18 @@ const RegistroPlanes = () => {
           <label htmlFor="plan">Selecciona un plan:</label>
           <select id="plan" value={planSeleccionado} onChange={(e) => setPlanSeleccionado(e.target.value)} required>
             <option value="">-- Selecciona un plan --</option>
-            <option value="plan1">Plan 1</option>
-            <option value="plan2">Plan 2</option>
-            <option value="plan3">Plan 3</option>
+            <option value="Plan Basico">Plan Basico</option>
+            <option value="Plan Avanzado">Plan Avanzado</option>
+            <option value="Plan Premium">Plan Premium</option>
           </select>
         </div>
         <button type="submit">Registrarse</button>
       </form>
     </div>
+    </div>
+    </div>
   );
 };
 
-export default RegistroPlanes;
+export default RegistroPlan;
+

@@ -359,4 +359,61 @@ header{
   background-color: #0056b3;
 }
 
+/* REGISTRO PLANES */
 
+.registro-planes {
+  
+  width: 400px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.registro-planes h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registro-planes form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro-planes form div {
+  margin-bottom: 10px;
+}
+
+.registro-planes label {
+  font-weight: bold;
+}
+
+.registro-planes input,
+.registro-planes select {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registro-planes button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registro-planes button:hover {
+  background-color: #0069d9;
+}
+
+.registro-padre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
