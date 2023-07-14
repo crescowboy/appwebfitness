@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 
 const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [planSeleccionado, setPlanSeleccionado] = useState('');
+  const navigate = useNavigate();
 
   const handleRegistro = (e) => {
     e.preventDefault();
@@ -25,7 +27,15 @@ const RegistroPlan = () => {
       icon: 'success',
       timer: 2000,
       timerProgressBar: true,
+    }).then((result) =>{
+      // Navegar al principio de la página después de cerrar la alerta
+      if(result.dismiss === Swal.DismissReason.timer){
+        navigate('/');
+      }
+
     })
+
+    
   };
 
   return (
