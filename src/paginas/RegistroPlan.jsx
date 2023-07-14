@@ -3,6 +3,8 @@ import Nav from '../Nav';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
+import FormPago from './FormPago';
+
 
 
 
@@ -10,7 +12,9 @@ const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [planSeleccionado, setPlanSeleccionado] = useState('');
+  const [muestraFormPago, setMuestraFormPago] = useState(false);
   const navigate = useNavigate();
+  
 
   const handleRegistro = (e) => {
     e.preventDefault();
@@ -22,20 +26,24 @@ const RegistroPlan = () => {
     setEmail('');
     setPlanSeleccionado('');
 
-    // Mostrar un mensaje de registro exitoso o realizar otra acción
-    Swal.fire({
-      title: '', 
-      text: 'Enviado con exito',
-      icon: 'success',
-      timer: 2000,
-      timerProgressBar: true,
-    }).then((result) =>{
-      // Navegar al principio de la página después de cerrar la alerta
-      if(result.dismiss === Swal.DismissReason.timer){
-        navigate('/');
-      }
 
-    })
+    setMuestraFormPago(true)
+
+
+    // Mostrar un mensaje de registro exitoso o realizar otra acción
+    // Swal.fire({
+    //   title: '', 
+    //   text: 'Enviado con exito',
+    //   icon: 'success',
+    //   timer: 2000,
+    //   timerProgressBar: true,
+    // }).then((result) =>{
+    //   // Navegar al principio de la página después de cerrar la alerta
+    //   if(result.dismiss === Swal.DismissReason.timer){
+    //     navigate('/');
+    //   }
+
+    // })
 
     
   };
@@ -58,9 +66,14 @@ const RegistroPlan = () => {
         <BiArrowBack></BiArrowBack>
         
         </button>  
-    <div className='registro-planes'>
+
+        {muestraFormPago?(
+          <FormPago></FormPago>
+        ):
+        <div className='registro-planes'>
     
     
+
       <h1>Registro de Planes</h1>
       <form onSubmit={handleRegistro}>
         <div>
@@ -83,6 +96,9 @@ const RegistroPlan = () => {
         <button type="submit">Registrarse</button>
       </form>
     </div>
+        
+        }
+    
     </div>
     </div>
   );
