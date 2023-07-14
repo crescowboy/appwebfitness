@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Nav from '../Nav';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import { BiArrowBack } from 'react-icons/bi';
+
 
 
 const RegistroPlan = () => {
@@ -38,6 +40,10 @@ const RegistroPlan = () => {
     
   };
 
+  const regresar = ()=>{
+    navigate('/')
+  }
+
   return (
     <div>
         <header>
@@ -47,8 +53,13 @@ const RegistroPlan = () => {
             
         </header>
     <div className='registro-padre'>
+
+      <button className='icon-back' onClick={regresar}>
+        <BiArrowBack></BiArrowBack>
         
+        </button>  
     <div className='registro-planes'>
+    
     
       <h1>Registro de Planes</h1>
       <form onSubmit={handleRegistro}>
