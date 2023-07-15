@@ -28,15 +28,22 @@ const FormPago = () => {
           <input
             type="text"
             id="cardNumber"
+            className="number-input"
+            maxLength={16}
             value={cardNumber}
-            onChange={(e) => setCardNumber(e.target.value)}
+            onInput={(e) => {
+              const value = e.target.value;
+              e.target.value = value.replace(/\D/g, '').slice(0, 16);
+              setCardNumber(e.target.value);
+            }}
+            inputMode="numeric"
             required
           />
         </div>
         <div>
           <label htmlFor="expiryDate">Fecha de vencimiento:</label>
           <input
-            type="text"
+            type="date"
             id="expiryDate"
             value={expiryDate}
             onChange={(e) => setExpiryDate(e.target.value)}
@@ -49,10 +56,18 @@ const FormPago = () => {
             type="text"
             id="cvv"
             value={cvv}
-            onChange={(e) => setCvv(e.target.value)}
+            maxLength={4}
+            onInput={(e) => {
+              const value = e.target.value;
+              e.target.value = value.replace(/\D/g, '').slice(0, 4);
+              setCvv(e.target.value);
+            }}
             required
           />
         </div>
+
+
+
         <button type="submit">Realizar pago</button>
       </form>
       </div>

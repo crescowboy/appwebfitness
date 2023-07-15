@@ -482,14 +482,28 @@ header{
 .form-pago button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ff0;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.form-pago button:hover {
-  background-color: #0069d9;
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
 }
+
+.number-input {
+  -moz-appearance: textfield;
+}
+
+
+/* .form-pago button:hover {
+  background-color: #0069d9;
+} */
 
