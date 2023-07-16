@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const FormPago = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
     const [cvv, setCvv] = useState('');
+    const navigate = useNavigate();
   
     const handlePaymentSubmit = (e) => {
       e.preventDefault();
@@ -11,13 +14,26 @@ const FormPago = () => {
       // Simulación del proceso de pago
       // Aquí puedes agregar la lógica de validación y procesamiento de pago simulado
   
-      // Mostrar un mensaje de pago exitoso o realizar otra acción
-      alert('Pago realizado con éxito');
+      
       
       // Restablecer los campos del formulario
       setCardNumber('');
       setExpiryDate('');
       setCvv('');
+      
+      Swal.fire({
+        title: '',
+        text: 'Pago realizado con exito',
+        icon: 'success',
+        timer: 2000,
+        timerProgressBar: true,
+      }).then((result) =>{
+        // Navegar al principio de la página después de cerrar la alerta
+        if(result.dismiss === Swal.DismissReason.timer){
+          navigate("/");
+        }
+      })
+
     };
   
     return (
