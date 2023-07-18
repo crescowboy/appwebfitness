@@ -498,7 +498,7 @@ header{
 .form-pago button {
   width: 100%;
   padding: 10px;
-  background-color: #ff0;
+  background-color: rgb(25, 0, 255);
   color: black;
   border: none;
   border-radius: 5px;
