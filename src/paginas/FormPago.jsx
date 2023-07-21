@@ -29,7 +29,7 @@ const FormPago = () => {
         timerProgressBar: true,
       }).then((result) =>{
         // Navegar al principio de la página después de cerrar la alerta
-        if(result.dismiss === Swal.DismissReason.timer){
+        if(result.dismiss === Swal.DismissReason.timer || result.isConfirmed){
           navigate("/");
         }
       })
