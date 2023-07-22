@@ -36,8 +36,8 @@ const FormPago = () => {
           // Puedes mostrar la segunda alerta aquí
           if (result.isConfirmed) {
             Swal.fire({
-              title: '',
-              text: 'Plan contratado con exito!',
+              title: 'Plan contratado con exito!',
+              text: 'Nos cantactaremos con usted...',
               icon: 'success',
               timer: 2000,
               timerProgressBar: true,
