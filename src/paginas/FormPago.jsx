@@ -20,19 +20,33 @@ const FormPago = () => {
       setCardNumber('');
       setExpiryDate('');
       setCvv('');
-      
+
       Swal.fire({
         title: '',
-        text: 'Pago realizado con exito',
-        icon: 'success',
-        timer: 2000,
+        text: 'Estas seguro que quieres contratar el plan?',
+        icon: 'info',
         timerProgressBar: true,
-      }).then((result) =>{
-        // Navegar al principio de la página después de cerrar la alerta
-        if(result.dismiss === Swal.DismissReason.timer || result.isConfirmed){
-          navigate("/");
-        }
+        showCancelButton: true,
+        showCloseButton: true,
+        confirmButtonText: "Si",
+        cancelButtonText: "No"
       })
+        .then((result) => {
+          // Esta es la función que se ejecuta cuando se cierra la primera alerta
+          // Puedes mostrar la segunda alerta aquí
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: '',
+              text: 'Plan contratado con exito!',
+              icon: 'success',
+              timer: 2000,
+              timerProgressBar: true,
+            }).finally(() => {
+              // Navegar al principio de la página después de cerrar la segunda alerta
+              navigate("/");
+            });
+          } 
+        });
 
     };
   
