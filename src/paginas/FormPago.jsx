@@ -22,7 +22,7 @@ const FormPago = () => {
       setCvv('');
 
       Swal.fire({
-        title: '',
+        title: 'Confirmacion',
         text: 'Estas seguro que quieres contratar el plan?',
         icon: 'info',
         timerProgressBar: true,

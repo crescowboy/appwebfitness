@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Nav from '../Nav';
+import { Contexto } from '../Context/Contexto';
 
 const Planes = () => {
+
+  // const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto);
+
   return (
     <div className="landing-page">
       <header>
