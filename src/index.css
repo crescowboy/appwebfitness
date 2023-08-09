@@ -528,3 +528,34 @@ header{
   background-color: #0069d9;
 } */
 
+
+/* ENTRENAMIENTOS PERSONALIZADOS */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #555;
+}
+
+

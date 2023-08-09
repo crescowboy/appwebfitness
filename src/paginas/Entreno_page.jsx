@@ -32,6 +32,30 @@ const Entreno_page = () => {
           </ul>
         </div>
 
+        <div class="container">
+  <div class="card">
+    <div class="card-title">Ectomorfos</div>
+    <div class="card-content">
+      {/* <!-- Contenido de la tarjeta para Ectomorfos --> */}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Mesomorfos</div>
+    <div class="card-content">
+      {/* <!-- Contenido de la tarjeta para Mesomorfos --> */}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Endomorfos</div>
+    <div class="card-content">
+      {/* <!-- Contenido de la tarjeta para Endomorfos --> */}
+    </div>
+  </div>
+</div>
+
+
         <div className="entrenamientos-contact">
           <h2>¡Contáctanos para obtener más información!</h2>
           <p>Si estás interesado en nuestros servicios de entrenamiento personalizado, no dudes en contactarnos.</p>
