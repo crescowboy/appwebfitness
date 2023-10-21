@@ -7,6 +7,7 @@ import Entreno_page from './paginas/Entreno_page';
 import Progreso_page from './paginas/Progreso_page';
 import Food_page from './paginas/Food_page';
 import RegistroPlan from './paginas/RegistroPlan';
+import Provider from './Context/Provider';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
   
    <>
+    <Provider>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/planes' element={<Planes></Planes>}></Route>
@@ -25,6 +27,7 @@ function App() {
         <Route path='/food' element={<Food_page></Food_page>}></Route>
         <Route path='registro' element={<RegistroPlan></RegistroPlan>}></Route>
       </Routes>
+    </Provider>
    </>
   );
 };

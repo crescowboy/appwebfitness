@@ -49,7 +49,7 @@ const RegistroPlan = () => {
   };
 
   const regresar = ()=>{
-    navigate('/')
+    navigate('/planes')
   }
 
   return (

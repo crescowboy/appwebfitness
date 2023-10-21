@@ -2,9 +2,16 @@ import React, { useContext } from 'react';
 import Nav from '../Nav';
 import { Contexto } from '../Context/Contexto';
 
+
 const Planes = () => {
 
-  // const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto);
+  const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
+
+  // Esta función manejará el clic en el botón y establecerá el plan seleccionado.
+  const seleccionarPlan = (plan) => {
+    setPlanSeleccionado(plan);
+    console.log(plan)
+  }
 
   return (
     <div className="landing-page">
@@ -26,7 +33,7 @@ const Planes = () => {
             Acceso completo a nuestra plataforma de entrenamiento y seguimiento de progreso.
           </p>
           <p className="plan-price">$9.99/mes</p>
-          <a href="/registro" className="cta-button">
+          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Basico')}>
             ¡Inscríbete ahora!
           </a>
         </div>
@@ -36,7 +43,7 @@ const Planes = () => {
             Acceso completo a nuestra plataforma, entrenamientos personalizados y asesoramiento nutricional.
           </p>
           <p className="plan-price">$19.99/mes</p>
-          <a href="/registro" className="cta-button">
+          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Avanzado')}>
             ¡Inscríbete ahora!
           </a>
         </div>
@@ -47,7 +54,7 @@ const Planes = () => {
             individuales con nuestros expertos.
           </p>
           <p className="plan-price">$29.99/mes</p>
-          <a href="/registro" className="cta-button">
+          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Premium')}>
             ¡Inscríbete ahora!
           </a>
         </div>
