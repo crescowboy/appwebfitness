@@ -25,7 +25,7 @@ function App() {
         <Route path='/entreno' element={<Entreno_page></Entreno_page>}></Route>
         <Route path='/progreso' element={<Progreso_page></Progreso_page>}></Route>
         <Route path='/food' element={<Food_page></Food_page>}></Route>
-        <Route path='registro' element={<RegistroPlan></RegistroPlan>}></Route>
+        <Route path='/registro' element={<RegistroPlan></RegistroPlan>}></Route>
       </Routes>
     </Provider>
    </>

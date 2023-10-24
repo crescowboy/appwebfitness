@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Nav from '../Nav';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import FormPago from './FormPago';
+import { Contexto } from '../Context/Contexto';
 
 
 
@@ -11,9 +12,15 @@ import FormPago from './FormPago';
 const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
-  const [planSeleccionado, setPlanSeleccionado] = useState('');
+  const {planSeleccionado, setPlanSeleccionado} = useContext(Contexto);
   const [muestraFormPago, setMuestraFormPago] = useState(false);
   const navigate = useNavigate();
+
+  console.log(planSeleccionado)
+
+  useEffect(() => {
+    console.log(planSeleccionado);
+  }, [planSeleccionado]);
   
 
   const handleRegistro = (e) => {
@@ -22,6 +29,10 @@ const RegistroPlan = () => {
     // Realizar la lógica de registro o enviar los datos a través de una API
 
     // Restablecer los campos del formulario
+
+    console.log(nombre)
+    console.log(email)
+    console.log(planSeleccionado)
     setNombre('');
     setEmail('');
     setPlanSeleccionado('');

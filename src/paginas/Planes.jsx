@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Nav from '../Nav';
 import { Contexto } from '../Context/Contexto';
 
@@ -10,8 +10,14 @@ const Planes = () => {
   // Esta función manejará el clic en el botón y establecerá el plan seleccionado.
   const seleccionarPlan = (plan) => {
     setPlanSeleccionado(plan);
-    console.log(plan)
+    console.log(planSeleccionado)
   }
+
+  // Use un efecto para observar cambios en planSeleccionado
+  useEffect(() => {
+    console.log(planSeleccionado);
+  }, [planSeleccionado]); // Esto se ejecutará cada vez que planSeleccionado cambie 
+  
 
   return (
     <div className="landing-page">
