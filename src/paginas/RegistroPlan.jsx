@@ -12,15 +12,17 @@ import { Contexto } from '../Context/Contexto';
 const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
-  const {planSeleccionado, setPlanSeleccionado} = useContext(Contexto);
+  const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto);
+  const {prueba, setPrueba} = useContext(Contexto)
   const [muestraFormPago, setMuestraFormPago] = useState(false);
   const navigate = useNavigate();
 
-  console.log(planSeleccionado)
+  console.log(prueba)
 
   useEffect(() => {
-    console.log(planSeleccionado);
+    console.log("Plan seleccionado en RegistroPlan:", planSeleccionado);
   }, [planSeleccionado]);
+  
   
 
   const handleRegistro = (e) => {
@@ -96,14 +98,15 @@ const RegistroPlan = () => {
           <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div>
-          <label htmlFor="plan">Selecciona un plan:</label>
-          <select id="plan" value={planSeleccionado} onChange={(e) => setPlanSeleccionado(e.target.value)} required>
-            <option value="">-- Selecciona un plan --</option>
-            <option value="Plan Basico">Plan Basico</option>
-            <option value="Plan Avanzado">Plan Avanzado</option>
-            <option value="Plan Premium">Plan Premium</option>
-          </select>
-        </div>
+  <label htmlFor="plan">Selecciona un plan:</label>
+  <select id="plan" value={planSeleccionado} onChange={(e) => setPlanSeleccionado(e.target.value)} required>
+    <option value="">-- Selecciona un plan --</option>
+    <option value="Plan Basico">Plan Basico</option>
+    <option value="Plan Avanzado">Plan Avanzado</option>
+    <option value="Plan Premium">Plan Premium</option>
+</select>
+</div>
+
         <button type="submit">Registrarse</button>
       </form>
     </div>

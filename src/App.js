@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Home from './paginas/Home';
@@ -22,10 +22,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/planes' element={<Planes></Planes>}></Route>
+        <Route path='/registro' element={<RegistroPlan></RegistroPlan>}></Route>
         <Route path='/entreno' element={<Entreno_page></Entreno_page>}></Route>
         <Route path='/progreso' element={<Progreso_page></Progreso_page>}></Route>
         <Route path='/food' element={<Food_page></Food_page>}></Route>
-        <Route path='/registro' element={<RegistroPlan></RegistroPlan>}></Route>
+        
       </Routes>
     </Provider>
    </>

@@ -5,19 +5,21 @@ import { Contexto } from '../Context/Contexto';
 
 const Planes = () => {
 
-  const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
+  const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto);
+  const {prueba, setPrueba} = useContext(Contexto);
 
   // Esta función manejará el clic en el botón y establecerá el plan seleccionado.
   const seleccionarPlan = (plan) => {
     setPlanSeleccionado(plan);
-    console.log(planSeleccionado)
+    setPrueba("hola")
+    // console.log("Plan seleccionado en Planes:", planSeleccionado);
   }
 
   // Use un efecto para observar cambios en planSeleccionado
   useEffect(() => {
-    console.log(planSeleccionado);
-  }, [planSeleccionado]); // Esto se ejecutará cada vez que planSeleccionado cambie 
-  
+    // console.log("Plan seleccionado en Planes:", planSeleccionado);
+    console.log(prueba)
+  }, [planSeleccionado]);
 
   return (
     <div className="landing-page">
