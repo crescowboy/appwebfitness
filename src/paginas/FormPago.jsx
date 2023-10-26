@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Contexto } from '../Context/Contexto';
 
 const FormPago = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
+    const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
     const [cvv, setCvv] = useState('');
     const navigate = useNavigate();
+
+    
   
     const handlePaymentSubmit = (e) => {
       e.preventDefault();

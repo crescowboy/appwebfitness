@@ -22,7 +22,7 @@ const Food_page = () => {
             Acceso completo a nuestra plataforma, entrenamientos personalizados y asesoramiento nutricional.
           </p>
           <p className="plan-price">$19.99/mes</p>
-          <a href="/planes" className="cta-button" onClick={hola}>
+          <a href="/" className="cta-button" onClick={hola}>
             ¡Inscríbete ahora!
           </a>
         </div>

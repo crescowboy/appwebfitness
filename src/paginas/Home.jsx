@@ -1,5 +1,5 @@
 // import './App.css';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 // import Nav from '../Nav';
 import { ToastContainer, toast } from 'react-toastify';
 import imgEntreno from '../img/entreno.jpg';
@@ -7,11 +7,13 @@ import imgProgreso from '../img/progreso.jpg';
 import imgFood from '../img/food.jpg';
 import Nav from '../Nav';
 import { useNavigate } from 'react-router-dom';
+import { Contexto } from '../Context/Contexto';
 
 const Home = () => {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
+    const {prueba,setPrueba} = useContext(Contexto)
     const navigate = useNavigate();
     // const formContacto = (e) => {
     //   e.preventDefault(); // Evita la recarga de la página al enviar el formulario
@@ -22,7 +24,7 @@ const Home = () => {
     //   setEmail('');
     //   setMensaje('');
     // }
-
+console.log(prueba)
 
     const entreno = ()=>{
       
