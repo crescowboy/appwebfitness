@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Contexto } from './Contexto'
+import { Contexto } from './Contexto';
+
 
 const Provider = ({children}) => {
   

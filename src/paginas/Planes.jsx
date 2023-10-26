@@ -1,24 +1,31 @@
 import React, { useContext, useEffect } from 'react';
 import Nav from '../Nav';
 import { Contexto } from '../Context/Contexto';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Planes = () => {
 
   const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto);
   const {prueba, setPrueba} = useContext(Contexto);
+  const navigate = useNavigate();
 
+  
   // Esta función manejará el clic en el botón y establecerá el plan seleccionado.
   const seleccionarPlan = (plan) => {
     setPlanSeleccionado(plan);
     setPrueba("hola")
+    navigate("/")
+
     // console.log("Plan seleccionado en Planes:", planSeleccionado);
   }
 
   // Use un efecto para observar cambios en planSeleccionado
+  console.log("valor: ",prueba)
   useEffect(() => {
-    // console.log("Plan seleccionado en Planes:", planSeleccionado);
-    console.log(prueba)
+    console.log("Plan seleccionado en Planes:", planSeleccionado);
+    console.log("valor: ",prueba)
   }, [planSeleccionado]);
 
   return (

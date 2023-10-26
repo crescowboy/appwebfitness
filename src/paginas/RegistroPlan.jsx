@@ -9,15 +9,16 @@ import { Contexto } from '../Context/Contexto';
 
 
 
+
 const RegistroPlan = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto);
-  const {prueba, setPrueba} = useContext(Contexto)
+  const {prueba, setPrueba} = useContext(Contexto);
   const [muestraFormPago, setMuestraFormPago] = useState(false);
   const navigate = useNavigate();
 
-  console.log(prueba)
+  console.log("varible: ",prueba)
 
   useEffect(() => {
     console.log("Plan seleccionado en RegistroPlan:", planSeleccionado);
