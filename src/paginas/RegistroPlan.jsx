@@ -18,10 +18,10 @@ const RegistroPlan = () => {
   const [muestraFormPago, setMuestraFormPago] = useState(false);
   const navigate = useNavigate();
 
-  console.log("varible: ",prueba)
+  // console.log("varible: ",prueba)
 
   useEffect(() => {
-    console.log("Plan seleccionado en RegistroPlan:", planSeleccionado);
+    // console.log("Plan seleccionado en RegistroPlan:", planSeleccionado);
   }, [planSeleccionado]);
   
   

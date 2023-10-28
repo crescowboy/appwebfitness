@@ -4,8 +4,9 @@ import { Contexto } from './Contexto';
 
 const Provider = ({children}) => {
   
-    const [planSeleccionado,setPlanSeleccionado] = useState("Plan Basico");
-    const [prueba, setPrueba] = useState("HOLA");
+    const [planSeleccionado,setPlanSeleccionado] = useState();
+    const [prueba, setPrueba] = useState();
+    const [plansele, setPlansele] = useState();
   
   
   
@@ -14,7 +15,9 @@ const Provider = ({children}) => {
             planSeleccionado,
             setPlanSeleccionado,
             prueba,
-            setPrueba
+            setPrueba,
+            plansele,
+            setPlansele
         }}>
         {children}
         </Contexto.Provider>

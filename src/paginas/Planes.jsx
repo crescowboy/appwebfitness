@@ -8,24 +8,26 @@ import { useNavigate } from 'react-router-dom';
 const Planes = () => {
 
   const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto);
-  const {prueba, setPrueba} = useContext(Contexto);
+  const {prueba, setPrueba, plansele, setPlansele} = useContext(Contexto);
   const navigate = useNavigate();
 
   
   // Esta función manejará el clic en el botón y establecerá el plan seleccionado.
   const seleccionarPlan = (plan) => {
     setPlanSeleccionado(plan);
-    setPrueba("hola")
-    navigate("/")
+    // setPrueba("hola")
+    // setPlansele("holaaaaaaaaaaaaa")
+    navigate("/registro")
 
     // console.log("Plan seleccionado en Planes:", planSeleccionado);
   }
 
   // Use un efecto para observar cambios en planSeleccionado
-  console.log("valor: ",prueba)
+  // console.log("valor: ",prueba)
   useEffect(() => {
-    console.log("Plan seleccionado en Planes:", planSeleccionado);
-    console.log("valor: ",prueba)
+    // console.log("Plan seleccionado en Planes:", planSeleccionado);
+    // console.log("valor: ",prueba)
+    // console.log("plan: ",plansele)
   }, [planSeleccionado]);
 
   return (
@@ -48,9 +50,7 @@ const Planes = () => {
             Acceso completo a nuestra plataforma de entrenamiento y seguimiento de progreso.
           </p>
           <p className="plan-price">$9.99/mes</p>
-          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Basico')}>
-            ¡Inscríbete ahora!
-          </a>
+          <button className="cta-button" onClick={()=> seleccionarPlan('Plan Basico')}>¡Inscríbete ahora!</button>
         </div>
         <div className="plan">
           <h2 className="plan-title">Plan Avanzado</h2>
@@ -58,9 +58,7 @@ const Planes = () => {
             Acceso completo a nuestra plataforma, entrenamientos personalizados y asesoramiento nutricional.
           </p>
           <p className="plan-price">$19.99/mes</p>
-          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Avanzado')}>
-            ¡Inscríbete ahora!
-          </a>
+          <button className="cta-button" onClick={()=> seleccionarPlan('Plan Avanzado')}>¡Inscríbete ahora!</button>
         </div>
         <div className="plan">
           <h2 className="plan-title">Plan Premium</h2>
@@ -69,9 +67,7 @@ const Planes = () => {
             individuales con nuestros expertos.
           </p>
           <p className="plan-price">$29.99/mes</p>
-          <a href="/registro" className="cta-button" onClick={()=> seleccionarPlan('Plan Premium')}>
-            ¡Inscríbete ahora!
-          </a>
+          <button className="cta-button" onClick={()=> seleccionarPlan('Plan Premium')}>¡Inscríbete ahora!</button>
         </div>
       </section>
       <footer className="footer">
