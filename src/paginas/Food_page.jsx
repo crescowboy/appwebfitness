@@ -7,7 +7,7 @@ const Food_page = () => {
   const {prueba,setPrueba} = useContext(Contexto)
 
   const hola = () =>{
-    setPrueba("hola")
+    setPrueba("prueba")
   }
 
   console.log("VALOR: ",prueba)
