@@ -29,7 +29,7 @@ const FormPago = () => {
 
       Swal.fire({
         title: 'Confirmacion',
-        text: 'Estas seguro que quieres contratar el plan?',
+        text: 'Estas seguro que quieres contratar el plan '+planSeleccionado+'?',
         icon: 'info',
         timerProgressBar: true,
         showCancelButton: true,

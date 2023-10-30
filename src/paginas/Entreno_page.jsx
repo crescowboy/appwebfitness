@@ -59,7 +59,10 @@ const Entreno_page = () => {
         <div className="entrenamientos-contact">
           <h2>¡Contáctanos para obtener más información!</h2>
           <p>Si estás interesado en nuestros servicios de entrenamiento personalizado, no dudes en contactarnos.</p>
-          <button onClick={handleGoBack}>Volver</button>
+          <div className='buttons-entrenoPage'>
+          <button className='cta-button' onClick={handleGoBack}>Volver</button>
+          <button className='cta-button' onClick={handleGoBack}>Contactanos</button>
+          </div>
         </div>
       </div>
     </div>
