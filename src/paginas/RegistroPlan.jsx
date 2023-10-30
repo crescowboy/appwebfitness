@@ -15,7 +15,7 @@ const RegistroPlan = () => {
   const [email, setEmail] = useState('');
   const { planSeleccionado, setPlanSeleccionado } = useContext(Contexto)
   const {prueba, setPrueba} = useContext(Contexto)
-  const [muestraFormPago, setMuestraFormPago] = useState(false);
+  const {muestraFormPago, setMuestraFormPago} = useContext(Contexto);
   const navigate = useNavigate();
 
   // console.log("varible: ",prueba)

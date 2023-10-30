@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { BiArrowBack } from 'react-icons/bi';
 import { Contexto } from '../Context/Contexto';
 
 const FormPago = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
     const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
+    const {muestraFormPago, setMuestraFormPago} = useContext(Contexto)
     const [cvv, setCvv] = useState('');
     const navigate = useNavigate();
 
@@ -53,9 +55,24 @@ const FormPago = () => {
         });
 
     };
+
+    const regresar = ()=>{
+      navigate('/registro')
+      setMuestraFormPago(false)
+    }
   
     return (
+      <div>
+        <button className='icon-back' onClick={regresar}>
+        <BiArrowBack></BiArrowBack>
+        
+        </button>
+      
         <div className='form-pago'>
+
+
+
+
       <form onSubmit={handlePaymentSubmit}>
         <div>
           <label htmlFor="cardNumber">Número de tarjeta:</label>
@@ -104,6 +121,7 @@ const FormPago = () => {
 
         <button type="submit">Realizar pago</button>
       </form>
+      </div>
       </div>
     );
 }

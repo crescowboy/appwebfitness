@@ -7,6 +7,8 @@ const Provider = ({children}) => {
     const [planSeleccionado,setPlanSeleccionado] = useState();
     const [prueba, setPrueba] = useState();
     const [plansele, setPlansele] = useState();
+    const [muestraFormPago, setMuestraFormPago] = useState(false);
+
   
   
   
@@ -17,7 +19,9 @@ const Provider = ({children}) => {
             prueba,
             setPrueba,
             plansele,
-            setPlansele
+            setPlansele,
+            muestraFormPago,
+            setMuestraFormPago
         }}>
         {children}
         </Contexto.Provider>
