@@ -7,16 +7,16 @@ import { Contexto } from '../Context/Contexto';
 const FormPago = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
-    const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
-    const {muestraFormPago, setMuestraFormPago} = useContext(Contexto)
+    // const {planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
+    const {muestraFormPago, setMuestraFormPago,planSeleccionado,setPlanSeleccionado} = useContext(Contexto)
     const [cvv, setCvv] = useState('');
     const navigate = useNavigate();
 
-    
+    console.log(planSeleccionado)
   
     const handlePaymentSubmit = (e) => {
       e.preventDefault();
-  
+      console.log('Valor de planSeleccionado:', planSeleccionado); 
       // Simulación del proceso de pago
       // Aquí puedes agregar la lógica de validación y procesamiento de pago simulado
   
@@ -26,10 +26,10 @@ const FormPago = () => {
       setCardNumber('');
       setExpiryDate('');
       setCvv('');
-
+      
       Swal.fire({
         title: 'Confirmacion',
-        text: 'Estas seguro que quieres contratar el plan '+planSeleccionado+'?',
+        text: `Estas seguro que quieres contratar el ${planSeleccionado}`,
         icon: 'info',
         timerProgressBar: true,
         showCancelButton: true,

@@ -38,7 +38,7 @@ const RegistroPlan = () => {
     console.log(planSeleccionado)
     setNombre('');
     setEmail('');
-    setPlanSeleccionado('');
+    // setPlanSeleccionado('');
 
 
     setMuestraFormPago(true)
