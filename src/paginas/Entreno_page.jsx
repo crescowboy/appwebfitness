@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import Nav from '../Nav'
 import imgEntreno from '../img/entreno.jpg';
+import imgEctomorfo from '../img/ectomorfo.png'
+import imgMesomorfo from '../img/mesomorfo.png'
+import imgEndomorfo from '../img/endomorfo.png'
 import { useNavigate } from 'react-router-dom';
 
 const Entreno_page = () => {
@@ -32,25 +35,25 @@ const Entreno_page = () => {
           </ul>
         </div>
 
-        <div class="container">
-  <div class="card">
-    <div class="card-title">Ectomorfos</div>
-    <div class="card-content">
-      {/* <!-- Contenido de la tarjeta para Ectomorfos --> */}
+        <div className="container">
+  <div className="card-entreno">
+    <div className="card-entreno-title">Ectomorfos</div>
+    <div className="card-entreno-content">
+      <img src={imgEctomorfo} alt="Ectomorfo" />
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Mesomorfos</div>
-    <div class="card-content">
-      {/* <!-- Contenido de la tarjeta para Mesomorfos --> */}
+  <div className="card-entreno">
+    <div className="card-entreno-title">Mesomorfos</div>
+    <div className="card-entreno-content">
+      <img src={imgMesomorfo} alt="Mesomorfo" />
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Endomorfos</div>
-    <div class="card-content">
-      {/* <!-- Contenido de la tarjeta para Endomorfos --> */}
+  <div className="card-entreno">
+    <div className="card-entreno-title">Endomorfos</div>
+    <div className="card-entreno-content">
+      <img src={imgEndomorfo} alt="Endomorfo" />
     </div>
   </div>
 </div>

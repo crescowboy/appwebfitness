@@ -544,8 +544,8 @@ header{
   padding: 20px;
 }
 
-.card {
-  background-color: #f4f4f4;
+.card-entreno {
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 200px;
@@ -554,15 +554,25 @@ header{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card-title {
+.card-entreno-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.card-content {
+.card-entreno-content {
   font-size: 14px;
   color: #555;
+}
+
+.card-entreno img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card-entreno img:hover {
+  transform: scale(1.05);
 }
 
 
