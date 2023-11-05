@@ -5,13 +5,29 @@ import imgEctomorfo from '../img/ectomorfo.png'
 import imgMesomorfo from '../img/mesomorfo.png'
 import imgEndomorfo from '../img/endomorfo.png'
 import { useNavigate } from 'react-router-dom';
+import ModalComponent from './ModalComponent';
 
 const Entreno_page = () => {
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    // Lógica para obtener la imagen y la descripción del tipo de cuerpo
+    // imageSrc y description deben ser establecidos antes de abrir el modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const handleGoBack = () => {
     navigate(-1); // Navega a la página anterior
   };
+
+  const infoEctomorfo =()=>{
+
+  }
 
   return (
    <div>
@@ -35,11 +51,15 @@ const Entreno_page = () => {
           </ul>
         </div>
 
+
+        <div className='entrenamientos-tipocuerpo'>
+          <h2>Tipo de cuerpo</h2>
+
         <div className="container">
   <div className="card-entreno">
     <div className="card-entreno-title">Ectomorfos</div>
     <div className="card-entreno-content">
-      <img src={imgEctomorfo} alt="Ectomorfo" />
+      <img src={imgEctomorfo} alt="Ectomorfo" onClick={openModal}/>
     </div>
   </div>
 
@@ -57,6 +77,17 @@ const Entreno_page = () => {
     </div>
   </div>
 </div>
+
+</div>
+
+{isModalOpen && (
+        <ModalComponent
+          isOpen={isModalOpen}
+          closeModal={closeModal}
+          // imageSrc={imageSrc}
+          // description={description}
+        />
+      )}
 
 
         <div className="entrenamientos-contact">

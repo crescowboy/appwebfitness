@@ -2,6 +2,14 @@ import React, { useReducer, useState } from 'react'
 import { Contexto } from './Contexto';
 
 
+// const init =()=>{
+//     const valor = localStorage.getItem("estado");
+//     return{
+//         estado:!!valor
+//     }
+// }
+
+
 const Provider = ({children}) => {
   
     const [planSeleccionado,setPlanSeleccionado] = useState();
@@ -9,7 +17,7 @@ const Provider = ({children}) => {
     const [plansele, setPlansele] = useState();
     const [muestraFormPago, setMuestraFormPago] = useState(false);
     const [estado,setEstado] = useState(false);
-    const [logeado,dispatch] = useReducer(miReducer,{},init);
+    // const [logeado,dispatch] = useReducer(miReducer,{},init);
   
   
   
