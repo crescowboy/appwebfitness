@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import { Contexto } from './Contexto';
 
 
@@ -8,7 +8,8 @@ const Provider = ({children}) => {
     const [prueba, setPrueba] = useState();
     const [plansele, setPlansele] = useState();
     const [muestraFormPago, setMuestraFormPago] = useState(false);
-
+    const [estado,setEstado] = useState(false);
+    const [logeado,dispatch] = useReducer(miReducer,{},init);
   
   
   
