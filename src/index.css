@@ -550,7 +550,7 @@ header{
 } */
 
 
-/* ENTRENAMIENTOS PERSONALIZADOS */
+/* ENTRENAMIENTOS PERSONALIZADOS/ ENTRENO PAGE*/
 .container {
   display: flex;
   justify-content: space-around;
@@ -588,5 +588,44 @@ header{
 .card-entreno img:hover {
   transform: scale(1.05);
 }
+
+/* ESTILOS MODAL */
+
+.modal-tipo-cuerpo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: auto;
+  background-color: rgb(92, 90, 90);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-tipo-cuerpo button{
+  margin-bottom: 10px;
+}
+
+.modal-guia{
+  padding: 40px;
+}
+.modal-guia h2{
+  padding-bottom: 20px;
+}
+
+.modal-guia p{
+  padding-bottom: 10px;
+  
+}
+
+.modal-guia button{
+  padding-bottom: 30px;
+}
+
+
 
 
