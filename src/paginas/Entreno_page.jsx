@@ -38,15 +38,17 @@ const Entreno_page = () => {
       para ganar peso y músculo. Suelen tener una estructura delgada y poca grasa corporal.
     </p>
     <p>
-      Algunos consejos para los Ectomorfos incluyen un enfoque en el entrenamiento de fuerza
-      y el consumo suficiente de calorías y proteínas para ayudar en el aumento de masa muscular.
+      <b>Detalles de entrenamiento y alimentación:</b>
+      Los ectomorfos tienden a tener dificultad para ganar peso y masa muscular. Por ello, deben enfocarse en entrenamiento de fuerza para aumentar la masa muscular y en una dieta específica para aumentar la ingesta calórica y proteica.
+      Pueden beneficiarse de ejercicios de alta intensidad y menos cardio, ya que tienen un metabolismo más rápido.
+
     </p>
     <ul>
-      <li>Entrenamiento de fuerza: Prioriza el levantamiento de pesas y ejercicios de fuerza para estimular el crecimiento muscular.</li>
-      <li>Descanso adecuado: Asegúrate de dormir lo suficiente para permitir que el cuerpo se recupere y se repare.</li>
-      <li>Alimentación equilibrada: Consume una dieta rica en proteínas, carbohidratos y grasas saludables para proporcionar energía y construir masa muscular.</li>
-      <li>Frecuencia en las comidas: Realiza varias comidas pequeñas a lo largo del día para mantener un suministro constante de nutrientes.</li>
-      <li>Consumo calórico: Asegúrate de consumir suficientes calorías, ya que los Ectomorfos tienden a tener un metabolismo más acelerado.</li>
+      <li><b>Entrenamiento de fuerza:</b> Prioriza el levantamiento de pesas y ejercicios de fuerza para estimular el crecimiento muscular.</li>
+      <li><b>Descanso adecuado:</b> Asegúrate de dormir lo suficiente para permitir que el cuerpo se recupere y se repare.</li>
+      <li><b>Alimentación equilibrada:</b> Consume una dieta rica en proteínas, carbohidratos y grasas saludables para proporcionar energía y construir masa muscular.</li>
+      <li><b>Frecuencia en las comidas:</b> Realiza varias comidas pequeñas a lo largo del día para mantener un suministro constante de nutrientes.</li>
+      <li><b>Consumo calórico:</b> Asegúrate de consumir suficientes calorías, ya que los Ectomorfos tienden a tener un metabolismo más acelerado.</li>
     </ul>
       </div>
     );
@@ -66,11 +68,11 @@ const Entreno_page = () => {
           Deben centrarse en una dieta equilibrada, rica en proteínas y carbohidratos de calidad. Esto les proporcionará
            la energía necesaria para el entrenamiento y apoyará la construcción muscular.</p>
         <ul>
-          <li>Entrenamiento equilibrado: Mesomorfos pueden beneficiarse de una combinación de entrenamiento de fuerza y cardio.</li>
-          <li>Dieta balanceada: Consumir una dieta equilibrada y variada con un enfoque en proteínas magras y carbohidratos complejos.</li>
-          <li>Enfoque en el desarrollo muscular: Pueden concentrarse en ejercicios que desarrollen y mantengan su masa muscular.</li>
-          <li></li>
-          <li></li>
+          <li><b>Entrenamiento equilibrado:</b> Mesomorfos pueden beneficiarse de una combinación de entrenamiento de fuerza y cardio.</li>
+          <li><b>Dieta balanceada:</b> Consumir una dieta equilibrada y variada con un enfoque en proteínas magras y carbohidratos complejos.</li>
+          <li><b>Enfoque en el desarrollo muscular:</b> Pueden concentrarse en ejercicios que desarrollen y mantengan su masa muscular.</li>
+          <li><b>Variabilidad en el entrenamiento:</b> Mantener la variedad en las rutinas de ejercicios para evitar el estancamiento y permitir el crecimiento continuo del músculo.</li>
+          <li><b>Descanso y recuperación:</b> Asegurarse de tener suficiente descanso entre sesiones de entrenamiento para permitir que los músculos se reparen y se fortalezcan.</li>
         </ul>
       </div>
     );
@@ -81,17 +83,19 @@ const Entreno_page = () => {
     const content = (
       <div className='modal-guia'>
         <h2>Endomorfo</h2>
-        <p>Descripción: Los endomorfos tienden a tener una constitución más redonda y son propensos a ganar peso fácilmente.
+        <p><b>Descripción:</b> Los endomorfos tienden a tener una constitución más redonda y son propensos a ganar peso fácilmente.
            Tienen una estructura más ancha con un metabolismo más lento.</p>
-        <p>Detalles de entrenamiento y alimentación:
+        <p><b>Detalles de entrenamiento y alimentación:</b>
           Los endomorfos pueden tener dificultad para perder peso y ganar músculo con facilidad. Por ello, un enfoque en la dieta y el ejercicio es clave para mantener un peso saludable.
           Deben centrarse en ejercicios aeróbicos y de resistencia para controlar la grasa y aumentar el metabolismo.
           Mantener una dieta equilibrada con un control estricto de la ingesta de calorías y macronutrientes es esencial.</p>
         
         <ul>
-          <li>Cardio y resistencia: Enfocarse en ejercicios cardiovasculares para mantener el peso y la resistencia para tonificar el cuerpo.</li>
-          <li>Control de la dieta: Ser cuidadosos con la ingesta calórica y equilibrio de macronutrientes.</li>
-          <li>Frecuencia de comidas y porciones: Optar por comidas más pequeñas y regulares, controlando las porciones.</li>
+          <li><b>Cardio y resistencia:</b> Enfocarse en ejercicios cardiovasculares para mantener el peso y la resistencia para tonificar el cuerpo.</li>
+          <li><b>Control de la dieta:</b> Ser cuidadosos con la ingesta calórica y equilibrio de macronutrientes.</li>
+          <li><b>Frecuencia de comidas y porciones:</b> Optar por comidas más pequeñas y regulares, controlando las porciones.</li>
+          <li><b>Hidratación y fibra:</b> Consumir suficiente agua y alimentos ricos en fibra puede ayudar a mantener la sensación de saciedad, controlar el apetito y mejorar la digestión.</li>
+          <li><b>nfoque en alimentos integrales:</b> Optar por alimentos integrales y nutritivos, evitando aquellos con altos niveles de azúcar y grasas no saludables.</li>
         </ul>
       </div>
     );
