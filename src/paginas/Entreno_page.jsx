@@ -4,6 +4,7 @@ import imgEntreno from '../img/entreno.jpg';
 import imgEctomorfo from '../img/ectomorfo.png'
 import imgMesomorfo from '../img/mesomorfo.png'
 import imgEndomorfo from '../img/endomorfo.png'
+import imgGym5 from '../img/Gym5.jpg'
 import { useNavigate } from 'react-router-dom';
 import ModalComponent from './ModalComponent';
 
@@ -104,9 +105,9 @@ const Entreno_page = () => {
 
   return (
    <div>
-    <header>
-    {/* <Nav /> */}
-    </header>
+    {/* <header>
+    
+    </header> */}
       
       <div className="entrenamientos-container">
         <h1>Entrenamientos Personalizados</h1>
@@ -114,6 +115,8 @@ const Entreno_page = () => {
         <p>En esta página encontrarás información detallada sobre nuestros servicios de entrenamiento personalizado.</p>
 
         <div className="entrenamientos-info">
+
+          <div>
           <h2>Beneficios de los entrenamientos personalizados</h2>
           <ul>
             <li>Adaptados a tus necesidades y objetivos específicos.</li>
@@ -122,6 +125,13 @@ const Entreno_page = () => {
             <li>Mejoría en la técnica y prevención de lesiones.</li>
             <li>Motivación y apoyo constante.</li>
           </ul>
+          </div>
+
+          <div>
+            <img src={imgGym5} alt="" />
+          </div>
+
+          
         </div>
 
 
