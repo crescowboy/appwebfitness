@@ -1,6 +1,10 @@
 import React from 'react';
 import Nav from '../Nav';
 import imgProgreso from '../img/gym4.jpg'
+import imgUser1 from '../img/user1.jpg'
+import imgUser2 from '../img/user2.jpg'
+import imgUser3 from '../img/user3.jpg'
+
 
 const Progreso_page = () => {
   return (
@@ -44,21 +48,39 @@ const Progreso_page = () => {
 
         {/* Otras secciones y contenido de la página... */}
         <div className="testimonial-section">
-        <h2>Testimonios de Clientes</h2>
-        <div className="testimonial">
-          <p>"Excelente plataforma para lograr mis objetivos. ¡Muy recomendado!"</p>
-          <p>María García</p>
-        </div>
-        <div className="testimonial">
-          <p>"Increíble servicio, los entrenadores son muy atentos. ¡Gracias!"</p>
-          <p>Carlos Ramírez</p>
-        </div>
-        <div className="testimonial">
-          <p>"¡Increíble experiencia con FitnessApp! Los entrenamientos personalizados y la asesoría nutricional han cambiado por completo mi enfoque hacia el fitness. Estoy viendo resultados asombrosos y me siento más saludable que nunca. ¡Altamente recomendado!"</p>
-          <p>David Castro</p>
-        </div>
-        {/* Puedes seguir agregando más testimonios */}
+  <h2>Testimonios de Clientes</h2>
+  <div className="testimonial">
+    <div className="testimonial-card">
+      <img src={imgUser3} alt="Imagen del cliente" />
+      <div className="testimonial-content">
+        <p>"Excelente plataforma para lograr mis objetivos. ¡Muy recomendado!"</p>
+        <p>María García</p>
       </div>
+    </div>
+  </div>
+  <div className="testimonial">
+    <div className="testimonial-card">
+      <img src={imgUser2} alt="Imagen del cliente" />
+      <div className="testimonial-content">
+        <p>"Increíble servicio, los entrenadores son muy atentos. ¡Gracias!"</p>
+        <p>Carlos Ramírez</p>
+      </div>
+    </div>
+  </div>
+  <div className="testimonial">
+    <div className="testimonial-card">
+      <img src={imgUser1} alt="Imagen del cliente" />
+      <div className="testimonial-content">
+        <p>
+          "¡Increíble experiencia con FitnessApp! Los entrenamientos personalizados y la asesoría nutricional han cambiado por completo mi enfoque hacia el fitness. Estoy viendo resultados asombrosos y me siento más saludable que nunca. ¡Altamente recomendado!"
+        </p>
+        <p>Sofía López</p>
+      </div>
+    </div>
+  </div>
+  {/* Puedes seguir agregando más testimonios */}
+</div>
+
       </div>
     </div>
   );
