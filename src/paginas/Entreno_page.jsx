@@ -60,10 +60,10 @@ const Entreno_page = () => {
     const content = (
       <div className='modal-guia'>
         <h2>Mesomorfo</h2>
-        <p>Descripción: Los mesomorfos suelen tener una constitución atlética con hombros 
+        <p>Los mesomorfos suelen tener una constitución atlética con hombros 
             anchos y una proporción muscular. Estos individuos pueden ganar músculo con relativa
             facilidad y mantener bajos niveles de grasa.</p>
-        <p>Detalles de entrenamiento y alimentación: Los mesomorfos suelen tener una facilidad para
+        <p><b>Detalles de entrenamiento y alimentación:</b> Los mesomorfos suelen tener una facilidad para
            ganar músculo y mantenerse delgados. Para ellos, es importante centrarse en un equilibrio 
            adecuado entre entrenamiento de fuerza y cardio para mantener la masa muscular y controlar la grasa.
           Deben centrarse en una dieta equilibrada, rica en proteínas y carbohidratos de calidad. Esto les proporcionará
@@ -84,7 +84,7 @@ const Entreno_page = () => {
     const content = (
       <div className='modal-guia'>
         <h2>Endomorfo</h2>
-        <p><b>Descripción:</b> Los endomorfos tienden a tener una constitución más redonda y son propensos a ganar peso fácilmente.
+        <p>Los endomorfos tienden a tener una constitución más redonda y son propensos a ganar peso fácilmente.
            Tienen una estructura más ancha con un metabolismo más lento.</p>
         <p><b>Detalles de entrenamiento y alimentación:</b>
           Los endomorfos pueden tener dificultad para perder peso y ganar músculo con facilidad. Por ello, un enfoque en la dieta y el ejercicio es clave para mantener un peso saludable.
@@ -110,9 +110,11 @@ const Entreno_page = () => {
     </header> */}
       
       <div className="entrenamientos-container">
+        <div className='entrenamientos-info1'>
         <h1>Entrenamientos Personalizados</h1>
         <p>¡Bienvenido a los entrenamientos personalizados!</p>
         <p>En esta página encontrarás información detallada sobre nuestros servicios de entrenamiento personalizado.</p>
+        </div>
 
         <div className="entrenamientos-info">
 
