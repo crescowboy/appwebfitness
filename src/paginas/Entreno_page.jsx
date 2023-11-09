@@ -5,6 +5,7 @@ import imgEctomorfo from '../img/ectomorfo.png'
 import imgMesomorfo from '../img/mesomorfo.png'
 import imgEndomorfo from '../img/endomorfo.png'
 import imgGym5 from '../img/Gym5.jpg'
+import { BiArrowBack } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 import ModalComponent from './ModalComponent';
 
@@ -27,6 +28,10 @@ const Entreno_page = () => {
   const handleGoBack = () => {
     navigate(-1); // Navega a la página anterior
   };
+
+  const regresar = ()=>{
+    navigate('/')
+  }
 
   const infoEctomorfo =()=>{
     const content = (
@@ -110,6 +115,10 @@ const Entreno_page = () => {
     </header> */}
       
       <div className="entrenamientos-container">
+      <button className='icon-back' onClick={regresar}>
+        <BiArrowBack></BiArrowBack>
+        
+        </button>
         <div className='entrenamientos-info1'>
         <h1>Entrenamientos Personalizados</h1>
         <p>¡Bienvenido a los entrenamientos personalizados!</p>
@@ -181,7 +190,7 @@ const Entreno_page = () => {
           <h2>¡Contáctanos para obtener más información!</h2>
           <p>Si estás interesado en nuestros servicios de entrenamiento personalizado, no dudes en contactarnos.</p>
           <div className='buttons-entrenoPage'>
-          <button className='cta-button' onClick={handleGoBack}>Volver</button>
+          {/* <button className='cta-button' onClick={handleGoBack}>Volver</button> */}
           <button className='cta-button' onClick={handleGoBack}>Contactanos</button>
           </div>
         </div>

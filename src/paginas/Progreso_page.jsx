@@ -4,16 +4,28 @@ import imgProgreso from '../img/gym4.jpg'
 import imgUser1 from '../img/user1.jpg'
 import imgUser2 from '../img/user2.jpg'
 import imgUser3 from '../img/user3.jpg'
+import { BiArrowBack } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
 
 
 const Progreso_page = () => {
+  const navigate = useNavigate();
+
+  const regresar = ()=>{
+    navigate('/')
+  }
+
   return (
     <div>
-      <header>
+      {/* <header>
         <Nav />
-      </header>
+      </header> */}
 
       <div className="progreso-container">
+      <button className='icon-back' onClick={regresar}>
+        <BiArrowBack></BiArrowBack>
+        
+        </button>
       <div className="progreso-info1">
         <h1>¡Tu Progreso es Nuestro Objetivo!</h1>
         <p>

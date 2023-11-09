@@ -346,8 +346,21 @@ header{
   margin-bottom: 80px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 70px;
+  
+}
+
+.entrenamientos-info1 h1{
+  background-color: #ff0;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.entrenamientos-info1 p{
+  font-size: 20px;
 }
 
 .entrenamientos-info{
@@ -696,13 +709,12 @@ header{
 .progreso-comunidad,
 .progreso-contact {
   margin-bottom: 30px;
-  border: 1px solid #ddd;
-  padding: 30px;
+  padding: 40px;
 }
 
 .progreso-info1{
   text-align: center;
-  background-color: #ddd;
+  background-color: white;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -721,6 +733,7 @@ header{
 .progreso-info{
   display: flex;
   /* justify-content: space-between; */
+  background-color: #f5f5f5;
 }
 
 .progreso-info p{
@@ -788,6 +801,101 @@ header{
 .testimonial-content p:last-child {
   font-weight: bold;
 }
+
+
+/* Estilos para la página Food_page */
+.food-info,
+.nutritional-tips,
+.recommended-recipes{
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+
+
+.food-container {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.food-info h1{
+  text-align: center;
+  background-color: #ff0;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.food-info p{
+  font-size: 20px;
+}
+
+.nutritional-tips {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.nutritional-tips ul {
+  text-align: left;
+  list-style-type: square;
+  
+}
+.nutritional-tips li{
+  margin-top: 10px;
+}
+
+
+.nutritional-tips-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.nutritional-tips img {
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recommended-recipes {
+  margin-bottom: 30px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.recipe-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 10px 0;
+}
+
+.recipe-card ul {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.recipe-card li {
+  list-style: none;
+  margin: 5px 0;
+}
+
 
 
 
