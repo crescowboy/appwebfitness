@@ -1,6 +1,10 @@
 import React, { useContext } from 'react'
 import Nav from '../Nav'
 import imgFood from '../img/food.jpg';
+import imgFood2 from '../img/food2.jpg';
+import imgEnsalada from '../img/ensalada.jpg';
+import imgSalmon from '../img/salmon.jpg';
+import imgSmoothie from '../img/smoothie.jpg';
 
 const Food_page = () => {
 
@@ -23,38 +27,51 @@ const Food_page = () => {
         </div>
 
         <div className="nutritional-tips">
-          <h2>Consejos Nutricionales</h2>
+          <h2>Plan de Alimentación</h2>
           <div className='nutritional-tips-content'>
-          <img src={imgFood} alt="Consejos Nutricionales" />
-          <ul>
-            <li>Consumir una variedad de frutas y verduras diariamente.</li>
-            <li>Controlar las porciones de comida para mantener un peso saludable.</li>
-            <li>Limitar la ingesta de azúcares refinados y alimentos procesados.</li>
-            <li>Beber suficiente agua durante el día.</li>
-          </ul>
+          <img src={imgFood2} alt="Consejos Nutricionales" />
+          <p>
+        Nuestros planes de fitness incluyen asesoramiento nutricional personalizado para
+        satisfacer las necesidades únicas de cada individuo. Estos planes no solo se centran
+        en el entrenamiento, sino que también consideran la importancia de una dieta equilibrada
+        para lograr resultados óptimos. Descubre cómo nuestros planes nutricionales están
+        diseñados para ayudarte a alcanzar tus objetivos de bienestar y fitness.
+      </p>
           </div>
         </div>
 
-        <div className="recommended-recipes">
-          <h2>Recetas Recomendadas</h2>
-          <p>Aquí puedes compartir recetas saludables y sabrosas. Por ejemplo:</p>
-          <div className="recipe-card">
-            <img src={imgFood} alt="Nombre de la Receta" />
-            <h3>Nombre de la Receta</h3>
-            <p>Ingredientes:</p>
-            <ul>
-              <li>Ingrediente 1</li>
-              <li>Ingrediente 2</li>
-              <li>Ingrediente 3</li>
-              {/* Agregar más ingredientes según la receta */}
-            </ul>
-            <p>Procedimiento:</p>
-            <p>Paso 1: Describe el primer paso.</p>
-            <p>Paso 2: Describe el segundo paso.</p>
-            {/* Agregar más pasos según la receta */}
-          </div>
-          {/* Agregar más cards de recetas */}
+        <div class="recetas-section">
+    <h2>Recetas Exclusivas</h2>
+
+    <div class="recetas-container">
+        <div class="receta">
+            <img src={imgEnsalada} alt="Receta 1" />
+            <h3>Ensalada Mediterránea</h3>
+            <p>Una ensalada refrescante con sabores mediterráneos, que combina lechuga mixta,
+               tomates cherry, pepino, aceitunas negras y queso feta, aderezada con una mezcla
+               de aceite de oliva y vinagre balsámico.</p>
+            <a href="enlace_receta_1">Ver Receta</a>
         </div>
+
+        <div class="receta">
+            <img src={imgSmoothie} alt="Receta 2"/>
+            <h3>Smoothie de Frutas Tropicales</h3>
+            <p>Un batido suave y delicioso que mezcla plátano, mango, piña y leche de almendras (o yogurt),
+              perfecto para un desayuno o refrigerio nutritivo y lleno de sabor.</p>
+            <a href="enlace_receta_2">Ver Receta</a>
+        </div>
+        <div class="receta">
+            <img src={imgSalmon} alt="Receta 3"/>
+            <h3>Salmón al Horno con Vegetales</h3>
+            <p>Salmón horneado acompañado de una variedad de vegetales, como brócoli y zanahorias,
+              rociados con aceite de oliva y sazonados con hierbas, lo que lo convierte en una opción
+              saludable y deliciosa.</p>
+            <a href="enlace_receta_3">Ver Receta</a>
+        </div>
+
+    </div>
+</div>
+
       </div>
     </div>
   );
