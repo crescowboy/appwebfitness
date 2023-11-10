@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import Nav from '../Nav'
+import { BiArrowBack } from 'react-icons/bi';
 import imgFood from '../img/food.jpg';
 import imgFood2 from '../img/food2.jpg';
 import imgEnsalada from '../img/ensalada.jpg';
@@ -124,6 +125,10 @@ const Food_page = () => {
         <Nav />
       </header> */}
       <div className="food-container">
+      <button className='icon-back' onClick={regresar}>
+        <BiArrowBack></BiArrowBack>
+        
+        </button>
         <div className='food-info'>
         <h1>Alimentación Saludable</h1>
         <p>

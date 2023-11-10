@@ -26,7 +26,7 @@ const Entreno_page = () => {
   };
 
   const handleGoBack = () => {
-    navigate(-1); // Navega a la página anterior
+    navigate('/#contactanos');
   };
 
   const regresar = ()=>{
