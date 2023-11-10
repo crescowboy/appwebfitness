@@ -37,25 +37,27 @@ const Food_page = () => {
   const receta1 =()=>{
     const content = (
       <div className='modal-guia'>
-        <h2>Ectomorfo</h2>
+        <h2>Ensalada Mediterránea</h2>
     {/* <img src={imgEctomorfo} alt="Ectomorfo" /> */}
-    <p>
-      El tipo de cuerpo Ectomorfo se caracteriza por ser delgado, con extremidades largas,
-      y un metabolismo rápido. Las personas con este tipo de cuerpo a menudo tienen dificultades
-      para ganar peso y músculo. Suelen tener una estructura delgada y poca grasa corporal.
-    </p>
-    <p>
-      <b>Detalles de entrenamiento y alimentación:</b>
-      Los ectomorfos tienden a tener dificultad para ganar peso y masa muscular. Por ello, deben enfocarse en entrenamiento de fuerza para aumentar la masa muscular y en una dieta específica para aumentar la ingesta calórica y proteica.
-      Pueden beneficiarse de ejercicios de alta intensidad y menos cardio, ya que tienen un metabolismo más rápido.
-
-    </p>
+    
+    <h4>Ingredientes</h4>
     <ul>
-      <li><b>Entrenamiento de fuerza:</b> Prioriza el levantamiento de pesas y ejercicios de fuerza para estimular el crecimiento muscular.</li>
-      <li><b>Descanso adecuado:</b> Asegúrate de dormir lo suficiente para permitir que el cuerpo se recupere y se repare.</li>
-      <li><b>Alimentación equilibrada:</b> Consume una dieta rica en proteínas, carbohidratos y grasas saludables para proporcionar energía y construir masa muscular.</li>
-      <li><b>Frecuencia en las comidas:</b> Realiza varias comidas pequeñas a lo largo del día para mantener un suministro constante de nutrientes.</li>
-      <li><b>Consumo calórico:</b> Asegúrate de consumir suficientes calorías, ya que los Ectomorfos tienden a tener un metabolismo más acelerado.</li>
+      <li>Lechuga mixta</li>
+      <li>Tomates cherry</li>
+      <li>Pepino</li>
+      <li>Aceitunas negras</li>
+      <li>Queso feta</li>
+      <li>Aceite de oliva</li>
+      <li>Vinagre balsámico</li>
+    </ul>
+
+    <h4>Procedimiento</h4>
+    <ul>
+      <li>Lava y corta la lechuga, los tomates cherry y el pepino.</li>
+      <li>En un tazón grande, mezcla la lechuga, los tomates, el pepino y las aceitunas.</li>
+      <li>Espolvorea el queso feta desmenuzado por encima de la ensalada.</li>
+      <li>En un recipiente aparte, mezcla el aceite de oliva y el vinagre balsámico para hacer el aderezo.</li>
+      <li>Rocía la ensalada con el aderezo justo antes de servir.</li>
     </ul>
       </div>
     );
@@ -65,22 +67,23 @@ const Food_page = () => {
   const receta2 =()=>{
     const content = (
       <div className='modal-guia'>
-        <h2>Mesomorfo</h2>
-        <p>Los mesomorfos suelen tener una constitución atlética con hombros 
-            anchos y una proporción muscular. Estos individuos pueden ganar músculo con relativa
-            facilidad y mantener bajos niveles de grasa.</p>
-        <p><b>Detalles de entrenamiento y alimentación:</b> Los mesomorfos suelen tener una facilidad para
-           ganar músculo y mantenerse delgados. Para ellos, es importante centrarse en un equilibrio 
-           adecuado entre entrenamiento de fuerza y cardio para mantener la masa muscular y controlar la grasa.
-          Deben centrarse en una dieta equilibrada, rica en proteínas y carbohidratos de calidad. Esto les proporcionará
-           la energía necesaria para el entrenamiento y apoyará la construcción muscular.</p>
-        <ul>
-          <li><b>Entrenamiento equilibrado:</b> Mesomorfos pueden beneficiarse de una combinación de entrenamiento de fuerza y cardio.</li>
-          <li><b>Dieta balanceada:</b> Consumir una dieta equilibrada y variada con un enfoque en proteínas magras y carbohidratos complejos.</li>
-          <li><b>Enfoque en el desarrollo muscular:</b> Pueden concentrarse en ejercicios que desarrollen y mantengan su masa muscular.</li>
-          <li><b>Variabilidad en el entrenamiento:</b> Mantener la variedad en las rutinas de ejercicios para evitar el estancamiento y permitir el crecimiento continuo del músculo.</li>
-          <li><b>Descanso y recuperación:</b> Asegurarse de tener suficiente descanso entre sesiones de entrenamiento para permitir que los músculos se reparen y se fortalezcan.</li>
-        </ul>
+        <h2>Smoothie de Frutas Tropicales</h2>
+        <h4>Ingredientes</h4>
+    <ul>
+      <li>Plátano</li>
+      <li>Mango</li>
+      <li>Piña</li>
+      <li>Leche de almendras (o yogurt)</li>
+    </ul>
+
+    <h4>Procedimiento</h4>
+    <ul>
+      <li>Corta las frutas en trozos.</li>
+      <li>Coloca las frutas en una licuadora.</li>
+      <li>Agrega la leche de almendras (o yogurt) a la licuadora.</li>
+      <li>Mezcla hasta obtener una consistencia suave y homogénea.</li>
+      <li>Sirve en un vaso y disfruta.</li>
+    </ul>
       </div>
     );
     openModal(content);
@@ -89,21 +92,25 @@ const Food_page = () => {
   const receta3 =()=>{
     const content = (
       <div className='modal-guia'>
-        <h2>Endomorfo</h2>
-        <p>Los endomorfos tienden a tener una constitución más redonda y son propensos a ganar peso fácilmente.
-           Tienen una estructura más ancha con un metabolismo más lento.</p>
-        <p><b>Detalles de entrenamiento y alimentación:</b>
-          Los endomorfos pueden tener dificultad para perder peso y ganar músculo con facilidad. Por ello, un enfoque en la dieta y el ejercicio es clave para mantener un peso saludable.
-          Deben centrarse en ejercicios aeróbicos y de resistencia para controlar la grasa y aumentar el metabolismo.
-          Mantener una dieta equilibrada con un control estricto de la ingesta de calorías y macronutrientes es esencial.</p>
-        
-        <ul>
-          <li><b>Cardio y resistencia:</b> Enfocarse en ejercicios cardiovasculares para mantener el peso y la resistencia para tonificar el cuerpo.</li>
-          <li><b>Control de la dieta:</b> Ser cuidadosos con la ingesta calórica y equilibrio de macronutrientes.</li>
-          <li><b>Frecuencia de comidas y porciones:</b> Optar por comidas más pequeñas y regulares, controlando las porciones.</li>
-          <li><b>Hidratación y fibra:</b> Consumir suficiente agua y alimentos ricos en fibra puede ayudar a mantener la sensación de saciedad, controlar el apetito y mejorar la digestión.</li>
-          <li><b>nfoque en alimentos integrales:</b> Optar por alimentos integrales y nutritivos, evitando aquellos con altos niveles de azúcar y grasas no saludables.</li>
-        </ul>
+        <h2>Salmón al Horno con Vegetales</h2>
+        <h4>Ingredientes</h4>
+    <ul>
+      <li>Filetes de salmón</li>
+      <li>Brócoli</li>
+      <li>Zanahorias</li>
+      <li>Aceite de oliva</li>
+      <li>Sal y pimienta</li>
+      <li>Hierbas frescas (tomillo, romero)</li>
+    </ul>
+
+    <h4>Procedimiento</h4>
+    <ul>
+      <li>Precalienta el horno a 200°C.</li>
+      <li>En una bandeja para hornear, coloca los filetes de salmón y los vegetales.</li>
+      <li>Rocía con aceite de oliva y sazona con sal, pimienta y hierbas frescas.</li>
+      <li>Hornea durante 15-20 minutos o hasta que el salmón esté cocido y los vegetales estén tiernos.</li>
+      
+    </ul>
       </div>
     );
     openModal(content);
