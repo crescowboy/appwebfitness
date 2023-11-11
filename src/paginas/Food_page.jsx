@@ -35,13 +35,17 @@ const Food_page = () => {
     navigate('/')
   }
 
+  const planes =()=>{
+    navigate('/planes')
+  }
+
   const receta1 =()=>{
     const content = (
       <div className='modal-guia'>
         <h2>Ensalada Mediterránea</h2>
     {/* <img src={imgEctomorfo} alt="Ectomorfo" /> */}
     
-    <h4>Ingredientes</h4>
+    <h3>Ingredientes</h3>
     <ul>
       <li>Lechuga mixta</li>
       <li>Tomates cherry</li>
@@ -52,7 +56,7 @@ const Food_page = () => {
       <li>Vinagre balsámico</li>
     </ul>
 
-    <h4>Procedimiento</h4>
+    <h3>Procedimiento</h3>
     <ul>
       <li>Lava y corta la lechuga, los tomates cherry y el pepino.</li>
       <li>En un tazón grande, mezcla la lechuga, los tomates, el pepino y las aceitunas.</li>
@@ -60,6 +64,8 @@ const Food_page = () => {
       <li>En un recipiente aparte, mezcla el aceite de oliva y el vinagre balsámico para hacer el aderezo.</li>
       <li>Rocía la ensalada con el aderezo justo antes de servir.</li>
     </ul>
+    <h4>Si quieres recetas personalizadas a tus objetivos contrata alguno de nuestros planes:</h4>
+    <button className='cta-button' onClick={planes}>Ver Planes</button>
       </div>
     );
     openModal(content);
@@ -69,7 +75,7 @@ const Food_page = () => {
     const content = (
       <div className='modal-guia'>
         <h2>Smoothie de Frutas Tropicales</h2>
-        <h4>Ingredientes</h4>
+        <h3>Ingredientes</h3>
     <ul>
       <li>Plátano</li>
       <li>Mango</li>
@@ -77,7 +83,7 @@ const Food_page = () => {
       <li>Leche de almendras (o yogurt)</li>
     </ul>
 
-    <h4>Procedimiento</h4>
+    <h3>Procedimiento</h3>
     <ul>
       <li>Corta las frutas en trozos.</li>
       <li>Coloca las frutas en una licuadora.</li>
@@ -85,6 +91,9 @@ const Food_page = () => {
       <li>Mezcla hasta obtener una consistencia suave y homogénea.</li>
       <li>Sirve en un vaso y disfruta.</li>
     </ul>
+
+    <h4>Si quieres recetas personalizadas a tus objetivos contrata alguno de nuestros planes:</h4>
+    <button className='cta-button' onClick={planes}>Ver Planes</button>
       </div>
     );
     openModal(content);
@@ -94,7 +103,7 @@ const Food_page = () => {
     const content = (
       <div className='modal-guia'>
         <h2>Salmón al Horno con Vegetales</h2>
-        <h4>Ingredientes</h4>
+        <h3>Ingredientes</h3>
     <ul>
       <li>Filetes de salmón</li>
       <li>Brócoli</li>
@@ -104,7 +113,7 @@ const Food_page = () => {
       <li>Hierbas frescas (tomillo, romero)</li>
     </ul>
 
-    <h4>Procedimiento</h4>
+    <h3>Procedimiento</h3>
     <ul>
       <li>Precalienta el horno a 200°C.</li>
       <li>En una bandeja para hornear, coloca los filetes de salmón y los vegetales.</li>
@@ -112,6 +121,9 @@ const Food_page = () => {
       <li>Hornea durante 15-20 minutos o hasta que el salmón esté cocido y los vegetales estén tiernos.</li>
       
     </ul>
+
+    <h4>Si quieres recetas personalizadas a tus objetivos contrata alguno de nuestros planes:</h4>
+    <button className='cta-button' onClick={planes}>Ver Planes</button>
       </div>
     );
     openModal(content);

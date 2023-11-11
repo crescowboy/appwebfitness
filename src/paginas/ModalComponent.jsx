@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const ModalComponent = ({ isOpen, closeModal, imageSrc, description }) => {
 
@@ -8,7 +9,9 @@ const ModalComponent = ({ isOpen, closeModal, imageSrc, description }) => {
     <Modal isOpen={isOpen} className="modal-tipo-cuerpo" onRequestClose={closeModal} contentLabel="Image Modal">
       
       <p>{description}</p>
-      <button className='cta-button' onClick={closeModal}>Cerrar</button>
+      <button className='close-button' onClick={closeModal}><AiOutlineClose></AiOutlineClose>
+      
+      </button>
     </Modal>
   );
 };
