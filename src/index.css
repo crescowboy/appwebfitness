@@ -367,8 +367,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
