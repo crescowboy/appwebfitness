@@ -436,18 +436,7 @@ header{
   margin-right: 10px;
 }
 
-/* .entrenamientos-contact button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
-/* .entrenamientos-contact button:hover {
-  background-color: #0056b3;
-} */
 
 /* REGISTRO PLANES */
 
@@ -1020,6 +1009,33 @@ header{
   .progreso-comunidad,
   .progreso-contact {
     padding: 50px; /* Aumento el espacio de relleno en todas las secciones */
+  }
+
+  /* Entreno page */
+  .entrenamientos-info1 {
+    padding: 20px;
+  }
+
+  .entrenamientos-info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .entrenamientos-info img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .entrenamientos-info ul {
+    margin-left: 0;
+  }
+
+  .entrenamientos-tipocuerpo {
+    padding: 20px;
+  }
+
+  .entrenamientos-contact {
+    padding: 20px;
   }
 }
 
