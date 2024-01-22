@@ -1,5 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import './css/Entreno_Page.css';
+import './css/Progreso_Page.css';
+import './css/Food_Page.css';
+import './css/FormPago.css';
 import React from 'react';
 import Home from './paginas/Home';
 import Planes from './paginas/Planes';

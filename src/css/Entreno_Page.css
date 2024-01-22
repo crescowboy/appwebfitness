@@ -1,0 +1,201 @@
+/* ENTRENO PAGE */
+.entrenamientos-container {
+    /* margin: 20px; */
+    /* padding: 50px; */
+    /* max-width: 1200px; */
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .entrenamientos-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .entrenamientos-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .entrenamientos-info1{
+    text-align: center;
+    margin-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    
+  }
+  
+  .entrenamientos-info1 h1{
+    background-color: #ff0;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  
+  .entrenamientos-info1 p{
+    font-size: 20px;
+  }
+  
+  .entrenamientos-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+  
+  .entrenamientos-info img{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .entrenamientos-info h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .entrenamientos-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .entrenamientos-info ul li{
+    margin-bottom: 5px;
+  }
+  
+  .entrenamientos-tipocuerpo{
+    background-color: #f2f2f2;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .entrenamientos-tipocuerpo h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .entrenamientos-contact{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .entrenamientos-contact h2 {
+    font-size: 20px;
+    /* margin-top: 60px; */
+    margin-bottom: 10px;
+  }
+  
+  .entrenamientos-contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons-entrenoPage button{
+    margin-right: 10px;
+  }
+
+  /* ENTRENAMIENTOS PERSONALIZADOS/ ENTRENO PAGE*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-entreno {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-entreno-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-entreno-content {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .card-entreno img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .card-entreno img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+/* Media queries para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  /* ENTRENO PAGE */
+  /* Estilos adicionales para pantallas más grandes que 768px */
+  .entrenamientos-info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .entrenamientos-info img {
+    width: 48%; /* Uso de 48% para permitir márgenes entre las imágenes */
+    margin-top: 0;
+  }
+
+  .entrenamientos-tipocuerpo,
+  .entrenamientos-contact {
+    padding: 30px;
+  }
+
+  /* Entreno page */
+  .entrenamientos-info1 {
+    padding: 20px;
+  }
+
+  .entrenamientos-info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .entrenamientos-info img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .entrenamientos-info ul {
+    margin-left: 0;
+  }
+
+  .entrenamientos-tipocuerpo {
+    padding: 20px;
+  }
+
+  .entrenamientos-contact {
+    padding: 20px;
+  }
+
+}
