@@ -111,7 +111,7 @@
   }
 
   /* ENTRENAMIENTOS PERSONALIZADOS/ ENTRENO PAGE*/
-.container {
+.container-cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -155,6 +155,30 @@
 @media screen and (max-width: 768px) {
   /* ENTRENO PAGE */
   /* Estilos adicionales para pantallas más grandes que 768px */
+  
+ 
+
+  .entrenamientos-info1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+   
+    
+  }
+  .entrenamientos-info1 h1{
+    background-color: #ff0;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  
+  .entrenamientos-info1 p{
+    font-size: 18px;
+  }
+  
   .entrenamientos-info {
     flex-direction: row;
     justify-content: space-between;
@@ -195,7 +219,28 @@
   }
 
   .entrenamientos-contact {
+    padding: 50px;
+  }
+
+  
+
+  .container-cards {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
+    
+  }
+  
+  .card-entreno {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
 }

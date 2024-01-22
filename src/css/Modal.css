@@ -1,0 +1,61 @@
+/* ESTILOS MODAL */
+
+.modal-tipo-cuerpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+    background-color: rgb(153, 152, 152);
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-tipo-cuerpo button{
+    margin-bottom: 10px;
+  }
+  
+  .modal-guia{
+    padding: 40px;
+  }
+  .modal-guia h2{
+    padding-bottom: 20px;
+  }
+  
+  .modal-guia p{
+    padding-bottom: 10px;
+    
+  }
+  
+  .modal-guia h4{
+    margin-top: 30px;
+  }
+  
+  .modal-guia button{
+    margin-top: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 3px;
+  }
+  .close-button:hover{
+    background-color: red;
+  }

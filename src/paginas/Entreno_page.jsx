@@ -149,7 +149,7 @@ const Entreno_page = () => {
         <div className='entrenamientos-tipocuerpo'>
           <h2>Tipo de cuerpo</h2>
 
-        <div className="container">
+        <div className="container-cards">
   <div className="card-entreno">
     <div className="card-entreno-title">Ectomorfos</div>
     <div className="card-entreno-content">

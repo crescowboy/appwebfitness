@@ -28,78 +28,11 @@ body {
   padding: 20px;
 }
 
-/* NAV */
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  background-color: #2D333B;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 2;
-}
-
-header{
-  margin-bottom: 50px;
-}
-
-.navbar ul{
-  display: flex;
-  list-style: none;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #2D333B;
-  height: 50px;
-  gap: 15px;
-}
-
-/* .activado{
-  color: red;
-  background-color: #ff0;
-} */
-
-.navbar ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  position: relative;
-  transition: 0.5s all linear;
-  padding: 5px 20px;
-}
-
-.navbar ul li a:hover{
-  color: #ff0;
-}
 
 
 
-/* Estilos de la navegación */
-.header {
-  background-color: #333;
-  padding: 10px 0;
-}
 
-.navbar {
-  display: flex;
-  justify-content: center;
-}
 
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin-right: 20px;
-  display: inline-block;
-}
-
-.nav-item a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 /* Estilos del hero section */
 .hero {
@@ -186,7 +119,7 @@ header{
 }
 
 /* Estilos de la sección de precios */
-.pricing {
+/* .pricing {
   padding: 40px 0;
 }
 
@@ -219,7 +152,7 @@ header{
 .plan-price {
   font-size: 24px;
   margin-bottom: 20px;
-}
+} */
 
 /* Estilos de la sección de contacto */
 .contact {
@@ -277,224 +210,6 @@ header{
 .footer p {
   margin: 0;
 }
-
-
-/* PLANES */
-
-.planes-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 0;
-}
-
-.plan {
-  width: 300px;
-  height: 300px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.plan-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.plan-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.plan-price {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.feature img {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.feature img:hover {
-  transform: scale(1.05);
-}
-
-
-
-
-
-/* REGISTRO PLANES */
-
-.registro-planes {
-  
-  width: 400px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-}
-
-.registro-planes h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.registro-planes form {
-  display: flex;
-  flex-direction: column;
-}
-
-.registro-planes form div {
-  margin-bottom: 10px;
-}
-
-.registro-planes label {
-  font-weight: bold;
-}
-
-.registro-planes input, 
-.registro-planes select{
-  width: 95%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#plan {
-  background-color: #f5f5f5;
-  color: #333;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-}
-
-
-#plan option {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-
-.registro-planes button {
-  width: 100%;
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #ff0;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.registro-padre{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-}
-
-.icon-back{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 24px;
-}
-
-.icon-back:hover{
-  background-color: rgb(234, 234, 234);
-  border-radius: 50%;
-}
-
-
-
-
-
-
-/* ESTILOS MODAL */
-
-.modal-tipo-cuerpo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: auto;
-  background-color: rgb(153, 152, 152);
-  /* border: 1px solid black; */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-tipo-cuerpo button{
-  margin-bottom: 10px;
-}
-
-.modal-guia{
-  padding: 40px;
-}
-.modal-guia h2{
-  padding-bottom: 20px;
-}
-
-.modal-guia p{
-  padding-bottom: 10px;
-  
-}
-
-.modal-guia h4{
-  margin-top: 30px;
-}
-
-.modal-guia button{
-  margin-top: 10px;
-}
-
-.close-button {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  background-color: red;
-  color: white;
-  padding: 10px;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  border-radius: 3px;
-}
-.close-button:hover{
-  background-color: red;
-}
-
 
 /* Media queries para hacerlo responsive */
 @media screen and (max-width: 768px) {
