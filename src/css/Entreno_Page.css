@@ -225,18 +225,18 @@
   
 
   .container-cards {
-    display: block;
-    justify-content: space-around;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
-    
   }
   
   .card-entreno {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%;
+    width: 80%;
+    max-width: 400px;
     margin-top: 10px;
     padding: 10px;
     text-align: center;
