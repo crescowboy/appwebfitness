@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen)
+  };
+
   return (
-    <nav className='navbar'>
-      <ul>
+    <nav className={`navbar ${isOpen ? 'open' : ''}`}>
+      <button className="menu-button" onClick={toggleMenu}>
+        ☰
+      </button>
+      <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
         <li><a href="/#inicio">Inicio</a></li>
         <li><a href="#features">Caracteristicas</a></li>
         <li><a href="#contact">Contact</a></li>
