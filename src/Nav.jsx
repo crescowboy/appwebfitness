@@ -11,9 +11,11 @@ const Nav = () => {
 
   return (
     <nav className={`navbar ${isOpen ? 'open' : ''}`}>
+      <div className='container-menu-button'>
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>
+      </div>
       <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
         <li><a href="/#inicio">Inicio</a></li>
         <li><a href="#features">Caracteristicas</a></li>
